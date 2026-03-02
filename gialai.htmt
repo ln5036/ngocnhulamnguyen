@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đa dạng sinh học Gia Lai</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f8f5;
+}
+
+header {
+    background: #1f4a36;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+section {
+    padding: 40px 10%;
+}
+
+h2 {
+    color: #1f4a36;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+footer {
+    background: #1f4a36;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Đa dạng Sinh học ở Gia Lai</h1>
+    <p>Vùng đất giàu tài nguyên thiên nhiên của Tây Nguyên</p>
+</header>
+
+<section>
+
+<div class="card">
+    <h2>1. Công viên quốc gia Kon Ka Kinh</h2>
+    <p>
+    Kon Ka Kinh là khu bảo tồn thiên nhiên quan trọng của Gia Lai,
+    với hệ sinh thái rừng nhiệt đới phong phú và nhiều loài động thực vật quý hiếm.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Kon_Ka_Kinh_National_Park.jpg" alt="Kon Ka Kinh">
+</div>
+
+<div class="card">
+    <h2>2. Động vật quý hiếm</h2>
+    <p>
+    Gia Lai là nơi sinh sống của nhiều loài động vật quý hiếm như
+    chà vá chân xám, vượn má vàng và nhiều loài chim đặc hữu Tây Nguyên.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Pygathrix_cinerea.jpg" alt="Chà vá chân xám">
+</div>
+
+<div class="card">
+    <h2>3. Thực vật đa dạng</h2>
+    <p>
+    Hệ thực vật ở Gia Lai rất phong phú với nhiều loài cây gỗ quý,
+    cây dược liệu và rừng nguyên sinh có giá trị sinh thái cao.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Tropical_forest_in_Vietnam.jpg" alt="Rừng nhiệt đới">
+</div>
+
+<div class="card">
+    <h2>4. Khu dự trữ sinh quyển Kon Hà Nừng</h2>
+    <p>
+    Khu dự trữ sinh quyển Kon Hà Nừng được UNESCO công nhận,
+    góp phần bảo tồn đa dạng sinh học và phát triển bền vững.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Kon_Ha_Nung_Biosphere_Reserve.jpg" alt="Kon Hà Nừng">
+</div>
+
+</section>
+
+<footer>
+    © 2026 Tìm hiểu thiên nhiên Gia Lai
+</footer>
+
+</body>
+</html>
