@@ -16,30 +16,34 @@ header {
     background: #1f4a36;
     color: white;
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px;
 }
 
 section {
     padding: 40px 10%;
 }
 
-h2 {
-    color: #1f4a36;
-}
-
 .card {
     background: white;
     padding: 20px;
     margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
-img {
+.card img {
     width: 100%;
-    max-width: 600px;
     border-radius: 10px;
     margin-top: 15px;
+    transition: transform 0.4s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #1f4a36;
 }
 
 footer {
@@ -55,45 +59,45 @@ footer {
 
 <header>
     <h1>Đa dạng Sinh học ở Gia Lai</h1>
-    <p>Vùng đất giàu tài nguyên thiên nhiên của Tây Nguyên</p>
+    <p>Vùng đất thiên nhiên phong phú của Tây Nguyên</p>
 </header>
 
 <section>
 
 <div class="card">
-    <h2>1. Công viên quốc gia Kon Ka Kinh</h2>
+    <h2>1. Vườn quốc gia Kon Ka Kinh</h2>
     <p>
-    Kon Ka Kinh là khu bảo tồn thiên nhiên quan trọng của Gia Lai,
-    với hệ sinh thái rừng nhiệt đới phong phú và nhiều loài động thực vật quý hiếm.
+    Là khu bảo tồn thiên nhiên quan trọng của Gia Lai,
+    nơi có hệ sinh thái rừng nguyên sinh và nhiều loài quý hiếm.
     </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Kon_Ka_Kinh_National_Park.jpg" alt="Kon Ka Kinh">
+    <img src="konkaking.jpg" alt="Kon Ka Kinh">
 </div>
 
 <div class="card">
     <h2>2. Động vật quý hiếm</h2>
     <p>
-    Gia Lai là nơi sinh sống của nhiều loài động vật quý hiếm như
-    chà vá chân xám, vượn má vàng và nhiều loài chim đặc hữu Tây Nguyên.
+    Gia Lai là nơi sinh sống của chà vá chân xám,
+    vượn má vàng và nhiều loài chim đặc hữu Tây Nguyên.
     </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Pygathrix_cinerea.jpg" alt="Chà vá chân xám">
+    <img src="chava.jpg" alt="Chà vá chân xám">
 </div>
 
 <div class="card">
-    <h2>3. Thực vật đa dạng</h2>
+    <h2>3. Rừng nhiệt đới</h2>
     <p>
-    Hệ thực vật ở Gia Lai rất phong phú với nhiều loài cây gỗ quý,
-    cây dược liệu và rừng nguyên sinh có giá trị sinh thái cao.
+    Hệ thực vật đa dạng với nhiều cây gỗ lớn,
+    cây dược liệu và sinh cảnh tự nhiên phong phú.
     </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Tropical_forest_in_Vietnam.jpg" alt="Rừng nhiệt đới">
+    <img src="rung.jpg" alt="Rừng nhiệt đới">
 </div>
 
 <div class="card">
     <h2>4. Khu dự trữ sinh quyển Kon Hà Nừng</h2>
     <p>
-    Khu dự trữ sinh quyển Kon Hà Nừng được UNESCO công nhận,
-    góp phần bảo tồn đa dạng sinh học và phát triển bền vững.
+    Được UNESCO công nhận, góp phần bảo tồn đa dạng sinh học
+    và phát triển bền vững.
     </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Kon_Ha_Nung_Biosphere_Reserve.jpg" alt="Kon Hà Nừng">
+    <img src="konhanung.jpg" alt="Kon Hà Nừng">
 </div>
 
 </section>
