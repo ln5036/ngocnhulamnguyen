@@ -3,28 +3,141 @@
 <head>
 <meta charset="UTF-8">
 <title>Thí nghiệm Vật lý</title>
+
 <style>
 body {
     font-family: Arial;
     background: #f4c6a8;
     padding: 40px;
 }
-a {
-    text-decoration: none;
+
+h1 {
     color: #1f4a36;
 }
+
+.box {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+button {
+    background: #1f4a36;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #145c3f;
+}
+
+input {
+    padding: 5px;
+    margin: 5px 0;
+}
 </style>
+
 </head>
 <body>
 
 <h1>Thí nghiệm Vật lý</h1>
 
-<p>Đây là trang thí nghiệm Vật lý.</p>
+<!-- 1. TÍNH VẬN TỐC -->
+<div class="box">
+<h2>1. Tính vận tốc</h2>
 
-<p>Ví dụ: Thí nghiệm về lực đẩy Archimedes, chuyển động, điện,...</p>
+<label>Quãng đường (m):</label><br>
+<input type="number" id="distance"><br>
+
+<label>Thời gian (s):</label><br>
+<input type="number" id="time"><br><br>
+
+<button onclick="calculateSpeed()">Tính vận tốc</button>
+
+<p id="speedResult"></p>
+</div>
+
+<!-- 2. RƠI TỰ DO -->
+<div class="box">
+<h2>2. Rơi tự do</h2>
+
+<label>Độ cao (m):</label><br>
+<input type="number" id="height"><br><br>
+
+<button onclick="calculateFall()">Tính thời gian rơi</button>
+
+<p id="fallResult"></p>
+</div>
+
+<!-- 3. ĐỊNH LUẬT OHM -->
+<div class="box">
+<h2>3. Định luật Ohm</h2>
+
+<label>Hiệu điện thế U (V):</label><br>
+<input type="number" id="voltage"><br>
+
+<label>Điện trở R (Ω):</label><br>
+<input type="number" id="resistance"><br><br>
+
+<button onclick="calculateCurrent()">Tính cường độ dòng điện</button>
+
+<p id="currentResult"></p>
+</div>
 
 <br>
 <a href="index.html">⬅ Quay về trang chủ</a>
+
+<script>
+
+// Tính vận tốc
+function calculateSpeed() {
+    let s = parseFloat(document.getElementById("distance").value);
+    let t = parseFloat(document.getElementById("time").value);
+
+    if (t > 0) {
+        let v = s / t;
+        document.getElementById("speedResult").innerHTML =
+            "Vận tốc = " + v.toFixed(2) + " m/s";
+    } else {
+        document.getElementById("speedResult").innerHTML =
+            "Thời gian phải lớn hơn 0";
+    }
+}
+
+// Rơi tự do (g = 9.8 m/s²)
+function calculateFall() {
+    let h = parseFloat(document.getElementById("height").value);
+
+    if (h > 0) {
+        let t = Math.sqrt((2 * h) / 9.8);
+        document.getElementById("fallResult").innerHTML =
+            "Thời gian rơi ≈ " + t.toFixed(2) + " giây";
+    } else {
+        document.getElementById("fallResult").innerHTML =
+            "Độ cao phải lớn hơn 0";
+    }
+}
+
+// Định luật Ohm
+function calculateCurrent() {
+    let U = parseFloat(document.getElementById("voltage").value);
+    let R = parseFloat(document.getElementById("resistance").value);
+
+    if (R > 0) {
+        let I = U / R;
+        document.getElementById("currentResult").innerHTML =
+            "Cường độ dòng điện I = " + I.toFixed(2) + " A";
+    } else {
+        document.getElementById("currentResult").innerHTML =
+            "Điện trở phải lớn hơn 0";
+    }
+}
+
+</script>
 
 </body>
 </html>
