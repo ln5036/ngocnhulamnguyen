@@ -1,11 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Website Nguyễn Ngọc Như Lam</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marceline Anderson</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4c6a8;
+}
+
+.section {
+    padding: 60px 10%;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e6b092;
+}
+
+.hero-text {
+    max-width: 45%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.hero img {
+    width: 40%;
+    border-radius: 6px;
+}
+
+.beauty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4c6a8;
+}
+
+.beauty img {
+    width: 25%;
+}
+
+.beauty-text {
+    max-width: 40%;
+}
+
+.beauty-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.work {
+    background: #1f4a36;
+    color: white;
+}
+
+.work-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-list {
+    width: 30%;
+}
+
+.work-list h3 {
+    margin: 20px 0 5px;
+}
+
+.work img {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 8px;
+}
+
+.clients {
+    background: #f4c6a8;
+    text-align: center;
+}
+
+.clients h2 {
+    margin-bottom: 40px;
+}
+
+.client-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.client {
+    width: 25%;
+}
+
+.client img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+</style>
+
 </head>
 <body>
-    <h1>Chào bạn!</h1>
-    <p>Đây là website đầu tiên của tôi. Nguyễn Ngọc Như Lam </p>
-      <img src="boi1.jpg" width="2000">
+
+<!-- HERO -->
+<div class="section hero">
+    <div class="hero-text">
+        <h1>Marceline Anderson</h1>
+        <p>MAKEUP ARTIST & HAIR STYLIST</p>
+    </div>
+    <img src="hero.jpg" alt="">
+</div>
+
+<!-- BEAUTY -->
+<div class="section beauty">
+    <img src="beauty.jpg" alt="">
+    <div class="beauty-text">
+        <h2>Beauty Empowers</h2>
+        <p>
+            I specialize in editorial and vintage looks.
+            My mission is to help you embrace your unique
+            beauty and feel confident in your own skin.
+        </p>
+    </div>
+</div>
+
+<!-- WORK -->
+<div class="section work">
+    <div class="work-container">
+        <div class="work-list">
+            <h3>Events</h3>
+            <p>Memorable styling for special occasions.</p>
+
+            <h3>Fashion</h3>
+            <p>Bold and modern runway-inspired looks.</p>
+
+            <h3>Editorial</h3>
+            <p>Creative concepts for magazines & photoshoots.</p>
+        </div>
+
+        <img src="model.jpg" alt="">
+    </div>
+
+    <div class="gallery">
+        <img src="boi1.jpg" alt="">
+        <img src="boi2.jpg" alt="">
+        <img src="boi3.jpg" alt="">
+    </div>
+</div>
+
+<!-- CLIENTS -->
+<div class="section clients">
+    <h2>Celebrity Clients</h2>
+
+    <div class="client-grid">
+        <div class="client">
+            <img src="c1.jpg" alt="">
+            <h4>Linda Jones</h4>
+            <p>International model and actress.</p>
+        </div>
+
+        <div class="client">
+            <img src="c2.jpg" alt="">
+            <h4>Parker Bentley</h4>
+            <p>Fashion icon and style influencer.</p>
+        </div>
+
+        <div class="client">
+            <img src="c3.jpg" alt="">
+            <h4>Loretta Mills</h4>
+            <p>Professional runway model.</p>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
