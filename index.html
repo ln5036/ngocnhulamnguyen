@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nhu Lam- Nguyen Ngoc</title>
+<title>Nguyễn Ngọc Như Lam</title>
 
 <style>
 body {
@@ -12,12 +12,41 @@ body {
     background: #f4c6a8;
 }
 
+/* NAVBAR */
+.navbar {
+    background: #1f4a36;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+.navbar .menu a:hover {
+    text-decoration: underline;
+}
+
 .section {
     padding: 60px 10%;
 }
 
 h1, h2, h3 {
-    margin: 0;
+    margin: 0 0 15px 0;
 }
 
 .hero {
@@ -33,12 +62,6 @@ h1, h2, h3 {
 
 .hero-text h1 {
     font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 14px;
-    letter-spacing: 2px;
 }
 
 .hero img {
@@ -50,7 +73,6 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f4c6a8;
 }
 
 .beauty img {
@@ -59,11 +81,6 @@ h1, h2, h3 {
 
 .beauty-text {
     max-width: 40%;
-}
-
-.beauty-text h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
 }
 
 .work {
@@ -81,124 +98,64 @@ h1, h2, h3 {
     width: 30%;
 }
 
-.work-list h3 {
-    margin: 20px 0 5px;
-}
-
 .work img {
     width: 40%;
     border-radius: 8px;
-}
-
-.gallery {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-.gallery img {
-    width: 30%;
-    border-radius: 8px;
-}
-
-.clients {
-    background: #f4c6a8;
-    text-align: center;
-}
-
-.clients h2 {
-    margin-bottom: 40px;
-}
-
-.client-grid {
-    display: flex;
-    justify-content: space-around;
-}
-
-.client {
-    width: 25%;
-}
-
-.client img {
-    width: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
 }
 </style>
 
 </head>
 <body>
 
+<!-- MENU -->
+<div class="navbar">
+    <div class="logo">Thí Nghiệm Khoa Học</div>
+    <div class="menu">
+        <a href="#vatly">Thí nghiệm Vật lý</a>
+        <a href="#sinhhoc">Thí nghiệm Sinh học</a>
+        <a href="#hoahoc">Thí nghiệm Hóa học</a>
+    </div>
+</div>
+
 <!-- HERO -->
 <div class="section hero">
     <div class="hero-text">
-        <h1>Nguyễn Ngọc Như Lam
-        <p>Cô bé mặt trời</p></h1>
+        <h1>Nguyễn Ngọc Như Lam</h1>
+        <p>Cô bé mặt trời</p>
     </div>
     <img src="hero.jpg" alt="">
 </div>
 
-<!-- BEAUTY -->
+<!-- ABOUT -->
 <div class="section beauty">
     <img src="beauty.jpg" alt="">
     <div class="beauty-text">
         <h2>About Me</h2>
         <p>
-    Em là học sinh lớp 7 với niềm yêu thích học tập và khám phá thế giới xung quanh.
-    Em luôn cố gắng chăm chỉ trong học tập, đặc biệt yêu thích môn Toán và Mỹ thuật.
-    Ngoài giờ học, em thích đọc sách, vẽ tranh và tham gia các hoạt động ngoại khóa
-    cùng bạn bè để phát triển kỹ năng và sự tự tin của mình.
+        Em là học sinh lớp 7 với niềm yêu thích học tập và khám phá thế giới xung quanh.
+        Em luôn cố gắng chăm chỉ trong học tập, đặc biệt yêu thích môn Toán và Mỹ thuật.
+        Ngoài giờ học, em thích đọc sách, vẽ tranh và tham gia các hoạt động ngoại khóa
+        cùng bạn bè để phát triển kỹ năng và sự tự tin của mình.
         </p>
     </div>
 </div>
 
-<!-- WORK -->
-<div class="section work">
-    <div class="work-container">
-        <div class="work-list">
-            <h3>Toán học</h3>
-<p>Rèn luyện tư duy logic, giải bài tập và khám phá những quy luật thú vị của con số.</p>
-
-<h3>Vật lý</h3>
-<p>Tìm hiểu các hiện tượng tự nhiên, chuyển động, lực và năng lượng trong đời sống.</p>
-
-<h3>Hóa học</h3>
-<p>Khám phá các phản ứng hóa học, chất và sự biến đổi của vật chất xung quanh.</p>
-        </div>
-
-        <img src="model.jpg" alt="">
-    </div>
-
-    <div class="gallery">
-        <img src="g1.jpg" alt="">
-        <img src="g2.jpg" alt="">
-        <img src="g3.jpg" alt="">
-    </div>
+<!-- VẬT LÝ -->
+<div class="section work" id="vatly">
+    <h2>Thí nghiệm Vật lý</h2>
+    <p>Tìm hiểu về lực, chuyển động, điện và các hiện tượng tự nhiên trong cuộc sống.</p>
 </div>
 
-<!-- CLIENTS -->
-<div class="section clients">
-    <h2>Thế Giới Tuổi Học Trò</h2>
-
-    <div class="client-grid">
-      <div class="client">
-    <img src="c1.jpg" alt="">
-    <h4>Học Tập Vui Vẻ</h4>
-    <p>Luôn cố gắng chăm chỉ mỗi ngày, yêu thích giải Toán và khám phá những điều mới mẻ.</p>
+<!-- SINH HỌC -->
+<div class="section" id="sinhhoc">
+    <h2>Thí nghiệm Sinh học</h2>
+    <p>Khám phá tế bào, thực vật, động vật và các quá trình sống thú vị.</p>
 </div>
 
-<div class="client">
-    <img src="c2.jpg" alt="">
-    <h4>Hoạt Động Ngoại Khóa</h4>
-    <p>Tham gia văn nghệ, sinh hoạt Đội và các hoạt động tập thể cùng bạn bè.</p>
-</div>
-
-<div class="client">
-    <img src="c3.jpg" alt="">
-    <h4>Ước Mơ Nhỏ Bé</h4>
-    <p>Mong muốn lớn lên trở thành người có ích, mang lại niềm vui cho gia đình và mọi người.</p>
-</div>
-    </div>
+<!-- HÓA HỌC -->
+<div class="section" id="hoahoc">
+    <h2>Thí nghiệm Hóa học</h2>
+    <p>Quan sát phản ứng hóa học, sự biến đổi chất và các thí nghiệm an toàn trong phòng học.</p>
 </div>
 
 </body>
