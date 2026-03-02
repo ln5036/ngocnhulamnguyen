@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Thí nghiệm Vật lý</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #f4c6a8;
+    padding: 40px;
+}
+
+h1 {
+    color: #1f4a36;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+button {
+    background: #1f4a36;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #145c3f;
+}
+
+input {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+/* KHU VỰC MÔ PHỎNG */
+.simulation {
+    position: relative;
+    height: 300px;
+    background: #eaeaea;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.ball {
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+</style>
+
+</head>
+<body>
+
+<h1>Thí nghiệm Vật lý</h1>
+
+<div class="box">
+<h2>Rơi tự do (Có animation)</h2>
+
+<label>Độ cao (m):</label><br>
+<input type="number" id="height" value="5"><br><br>
+
+<button onclick="startFall()">Bắt đầu rơi</button>
+
+<p id="fallResult"></p>
+
+<div class="simulation">
+    <div class="ball" id="ball"></div>
+</div>
+
+</div>
+
+<a href="index.html">⬅ Quay về trang chủ</a>
+
+<script>
+
+function startFall() {
+
+    let h = parseFloat(document.getElementById("height").value);
+    let ball = document.getElementById("ball");
+
+    if (h <= 0) {
+        document.getElementById("fallResult").innerHTML =
+            "Độ cao phải lớn hơn 0";
+        return;
+    }
+
+    // Tính thời gian rơi theo công thức vật lý
+    let g = 9.8;
+    let t = Math.sqrt((2 * h) / g);
+
+    document.getElementById("fallResult").innerHTML =
+        "Thời gian rơi ≈ " + t.toFixed(2) + " giây";
+
+    // Reset vị trí
+    ball.style.top = "0px";
+
+    let position = 0;
+    let ground = 260; 
+    let speed = ground / (t * 60); 
+
+    let interval = setInterval(function() {
+        position += speed;
+        ball.style.top = position + "px";
+
+        if (position >= ground) {
+            clearInterval(interval);
+        }
+
+    }, 16); 
+}
+
+</script>
+
+</body>
+</html>
